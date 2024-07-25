@@ -24,7 +24,7 @@ export function getOptions(
 
 // 这个属性必须要用默认导出
 const i18nConfig = {
-  defaultLocale: "zh",
-  locales: ["zh", "en", "fr"],
+  defaultLocale: "en",
+  locales: ["en", "zh", "fr"],
 };
 export default i18nConfig;

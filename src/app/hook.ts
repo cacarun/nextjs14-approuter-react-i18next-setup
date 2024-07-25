@@ -4,6 +4,8 @@ import { i18n } from "i18next";
 import { usePathname, useRouter } from "next/navigation";
 import i18nConfig from "./i18n/i18nConfig";
 
+// 提供hooks给客户端组件调用
+
 // 其实客户端可以直接调用useTranslation()获取t，但没有类型提示，所以我们封装了一层
 export function useClientTranslation() {
     const { t: tt, i18n } = useTranslation();
