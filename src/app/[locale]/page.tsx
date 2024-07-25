@@ -1,5 +1,6 @@
 import TranslationsProvider from "@/common/TranslationsProvider";
 import Header from '@/components/Header';
+import LanguageChanger from '@/components/LanguageChanger'
 import initTranslations from "@/i18n";
 import { getNamespaces } from "@/i18n/i18nConfig";
 
@@ -20,6 +21,7 @@ export default async function Home({
       <main className=' relative flex max-h-screen min-h-screen flex-row'>
         <div>{t('title')}</div>
         <Header />
+        <LanguageChanger/>
       </main>
     </TranslationsProvider>
   );
